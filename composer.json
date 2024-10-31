@@ -1,0 +1,26 @@
+{
+  "name": "tmmtech/resize-image-before-upload",
+  "type": "wordpress-plugin",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url":  "https://bitbucket.org/tmmtech/wp-plugins-core.git/",
+      "only": ["tmmtech/*"]
+    }
+  ],
+  "require": {
+    "automattic/jetpack-autoloader": "^2.11",
+    "tmmtech/wp-plugins-core": "*",
+    "woocommerce/action-scheduler": "^3.6"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "platform": {
+      "php": "7.4"
+    },
+    "allow-plugins": {
+      "automattic/jetpack-autoloader": true
+    }
+  }
+}
